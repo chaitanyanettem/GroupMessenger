@@ -7,6 +7,10 @@ import java.io.Serializable;
  * storing the message. Sequence number is initialized to -100. It has to implement Serializable
  * so that GroupMessengerActivity can stream Objects. It has to implement Comparable to be used
  * as an ArrayList.
+ * 
+ * I really only needed a dumb datastructure to store the message with its sequence. I didn't bother
+ * making those fields private and providing getter and setter methods because that will be equivalent
+ * to having public fields.
  */
 
 class MessageData implements Serializable, Comparable<MessageData>{
